@@ -24,7 +24,7 @@ export function DashboardSidebar() {
   return (
     <div className="flex flex-col h-full">
       <SidebarMenu className="flex-1">
-        {menuItems.map((item) => {
+  {menuItems.map((item, idx) => {
           const Icon = item.icon
           const isActive = pathname === item.href || (item.href !== "/dashboard" && pathname.startsWith(item.href))
 
@@ -59,12 +59,12 @@ export function DashboardSidebar() {
       </SidebarMenu>
 
       <SidebarMenu className="border-t border-slate-800 pt-4 mt-4">
-        {bottomItems.map((item) => {
+  {bottomItems.map((item, idx) => {
           const Icon = item.icon
           const isActive = pathname === item.href
 
           return (
-            <SidebarMenuItem key={item.href}>
+            <SidebarMenuItem key={`${item.href}-${idx}`}>
               <SidebarMenuButton
                 asChild
                 isActive={isActive}
