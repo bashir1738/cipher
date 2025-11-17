@@ -2,8 +2,8 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import { useState } from "react"
+    import { Menu, X } from "lucide-react"
+    import { useState } from "react"
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,9 +18,8 @@ export function SiteHeader() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <Link href="/" className="text-slate-400 hover:text-slate-200 transition-colors">Home</Link>
-          <Link href="/dashboard" className="text-slate-400 hover:text-slate-200 transition-colors">Dashboard</Link>
-          <Link href="#features" className="text-slate-400 hover:text-slate-200 transition-colors">Features</Link>
-          <Link href="#pricing" className="text-slate-400 hover:text-slate-200 transition-colors">Pricing</Link>
+          <Link href="/#features" className="text-slate-400 hover:text-slate-200 transition-colors">Features</Link>
+          <Link href="/#use-cases" className="text-slate-400 hover:text-slate-200 transition-colors">Use Cases</Link>
         </nav>
 
         {/* Desktop CTA */}
@@ -42,9 +41,8 @@ export function SiteHeader() {
         <div className="md:hidden border-t border-slate-800 bg-slate-900/50">
           <div className="px-6 py-4 space-y-3 flex flex-col">
             <Link href="/" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Home</Link>
-            <Link href="/dashboard" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Dashboard</Link>
-            <Link href="#features" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Features</Link>
-            <Link href="#pricing" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Pricing</Link>
+            <Link href="/#features" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Features</Link>
+            <Link href="/#use-cases" className="text-slate-400 hover:text-slate-200 transition-colors py-2">Use Cases</Link>
             <div className="pt-3 border-t border-slate-700">
               <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">Connect Wallet</Button>
             </div>

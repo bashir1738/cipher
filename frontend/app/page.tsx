@@ -105,8 +105,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Benefits Section */}
-      <div className="py-16 border-t border-slate-800">
+  {/* Benefits Section */}
+  <div id="features" className="py-16 border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">Built for Both Sides</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -132,7 +132,7 @@ export default function Home() {
       </div>
 
       {/* Use Cases Section */}
-      <div className="py-16 border-t border-slate-800">
+      <div id="use-cases" className="py-16 border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">Perfect for Any Project</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -178,8 +178,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Final CTA Section */}
-      <div className="py-16 border-t border-slate-800 bg-gradient-to-r from-blue-950/30 to-cyan-950/30">
+  {/* Final CTA Section */}
+  <div className="py-16 border-t border-slate-800 bg-linear-to-r from-blue-950/30 to-cyan-950/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Take Control?</h2>
           <p className="text-lg text-muted-foreground mb-8">Join thousands of freelancers and clients already using Cipher for secure, decentralized collaboration.</p>
