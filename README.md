@@ -365,6 +365,4 @@ Cipher combines:
 * Streaming payments
 * BlockDAG speed
 
-This combination **does not exist anywhere in the world today**, giving Cipher a strong chance to win a hackathon.
-
 ---
